@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <section class="landing">
+        <div class="main-stack">
+            <div class="container">
+                <h1 id="digit"></h1>
+            </div>    
+
+        <div class="buttons">
+            <button id="start" class="btn-image" onclick="startNewLevel()" style="background-image: url('/Memorial/play.png')"></button>
+            
+            <button id="check" class="btn-image" style="background-image: url('/Memorial/check.png')"onclick="checkUserSequence()"></button>
+        </div>
+
+        <input type="text" class="input" id="userSequence">
+
+        <div class="game-stats">
+            <h4 class="stats">Lives: <span id="lives">3</span></h4>
+            <h4 class="stats">Level: <span id="level">1</span></h4>
+        </div>
+
+        <h2 id="result" class="result"></h2>
+
+        </div>
+    </section>
+    <script src="/Memorial/game.js"></script>
+</body>
+</html>
